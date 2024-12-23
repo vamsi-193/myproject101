@@ -1,0 +1,85 @@
+@font-face {
+    font-family: NeueMachina;
+    src: url(../fonts/NeueMachina-Regular.otf);
+}
+#view1 #mainheading{
+    font-size: 75px;
+    font-family: NeueMachina;
+    font-weight: 300;
+    line-height: 70px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+#view1 #green{
+    font-size: 75px;
+    font-family: NeueMachina;
+    font-weight: 300;
+    color: #24cfa6;
+    margin-left: 50px;
+    margin-top: -10px;
+}
+#view1 #subheading{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 70px;
+    font-family: NeueMachina;
+
+}
+#view2{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#view2 p{
+    font-size: 45px;
+    font-weight: 200;
+    font-family: NeueMachina;
+
+}
+#view2 #courses{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+#view2 #courses .course{
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+#view2 #courses .course #image_link{
+    width: 450px;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: #181717;
+    display: block;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+}
+#view2 #courses .course #image_link p{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: NeueMachina;
+    padding-bottom: 10px;
+    margin-left: 20px;
+
+}
+#view2 #courses .course img{
+    width: 450px;
+    margin-bottom: 10px;
+}
+#view2 #courses .course #link{
+    width: 400px;
+    padding: 7px 25px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    background-color: #24cfa6;
+    display: block;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-top: 25px;
+    font-weight: bold;
+    font-family: NeueMachina;
+
+}

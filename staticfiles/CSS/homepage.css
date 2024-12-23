@@ -1,0 +1,207 @@
+
+@font-face {
+    font-family: 'NeueMachina';
+    src: url(../fonts/NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: 'juana';
+    src: url(../fonts/Fontspring-DEMO-juana-regular.otf);
+}
+
+#view1 .middle {
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+}
+
+#view1 .middle p {
+    line-height: 85px;
+    font-size: 90px;
+    font-weight: 100;
+    font-family: 'NeueMachina';
+    margin-bottom: 50px;
+
+}
+.text-highlight{
+    font-family: 'NeueMachina';
+    color: #24cfa6;
+
+
+}
+#view1 .middle p .italic {
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'juana';
+}
+
+#view1 .middle #button {
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    background-color: #24cfa6;
+    border-radius: 10px;
+    font-family: 'NeueMachina';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#view1 .middle .side-text {
+    font-size: 13px;
+    width: 200px;
+    text-align: left;
+    font-weight: 300;
+    position: absolute;
+    right: 500px;
+    bottom: 0;
+}
+
+#view1 .bottom {
+    margin-top: 50px;
+    width: 100%;
+}
+
+#view1 .bottom .mileStones {
+    padding-top: 20px;
+    display: flex;
+    gap: 100px;
+    font-size: 35px;
+    justify-content: center;
+}
+
+#view1 .bottom .mileStones .mileStone {
+    text-align: center;
+}
+
+#view1 .bottom .mileStones .mileStone .text p {
+    font-size: 18px;
+    font-family: 'NeueMachina';
+}
+
+#view2 .top {
+    width: 100%;
+    font-family: 'NeueMachina';
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#view2 .middle iframe {
+    aspect-ratio: 16/9;
+    max-width: 1000px;
+    margin-left: 450px;
+    margin-top: 100px;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    border: none;
+}
+
+#view2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#view2 .bottom {
+    margin: auto;
+    margin-top: 100px;
+}
+#view2 .bottom #button {
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    background-color: #24cfa6;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+
+#view3{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#view3 #courses_offered{
+    font-size: 50px;
+    font-weight: 200;
+}
+#view3 #courses{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+#view3 #courses .course{
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+#view3 #courses .course #image_link{
+    width: 450px;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: #181717;
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+#view3 #courses .course #image_link p{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: NeueMachina;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+#view3 #courses .course img{
+    width: 450px;
+    margin-bottom: 10px;
+}
+#view3 #courses .course #link{
+    width: 400px;
+    padding: 7px 25px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    background-color: #24cfa6;
+    display: block;
+    border-radius: 20px;
+    font-size: 30px;
+    margin-top: 25px;
+    font-weight: bold;
+    font-family: NeueMachina;
+
+}
+#view4{
+    width: 100%;
+}
+#view4 #companees{
+    font-size: 50px;
+    text-align: center;
+    font-family: NeueMachina;
+}
+#view4 #companiesimg{
+    width: 75%;
+    height: 400px;
+    margin: 100px auto;
+    background-image: url(../images/companies.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#view4 #button{
+    width: 400px;
+    padding: 7px 25px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    background-color: #24cfa6;
+    display: block;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: NeueMachina;
+    margin: 25px auto;
+}

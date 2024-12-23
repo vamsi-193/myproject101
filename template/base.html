@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/base.css' %}">
+    <title> {% block title %}
+        {% endblock title %}</title>
+    <link rel="shortcut icon" href="{% static 'images/logo.jpg' %}" type="image/x-icon">
+</head>
+
+<body>
+    <div id="nav">
+        <div id="heading">
+            <img src="{% static 'images/logo.jpg'%}" alt="">
+            <h1>Sheryians Coding School</h1>
+        </div>
+        <ul>
+            <li><a href="{% url 'myapp:homepage' %}">Home</a></li>
+            <li><a href="{% url 'myapp:courses' %}">Courses</a></li>
+            <li><a href="{% url 'myapp:bootcamp' %}">Bootcamp(kodr)</a></li>
+            <li><a href="">Sign In</a></li>
+
+        </ul>
+    </div>
+    <div id="content">
+        {% block content %}
+        {% endblock content %}
+    </div>
+    <div id="footer">
+        <div id="details">
+            <div id="col1" class="col">
+                <p>Lets Connect our social media</p>
+            </div>
+            <div id="col2" class="col">
+                <h1>Company</h1>
+                <p>
+                    Aboutus <br>
+                    Support <br>
+                    Privacy Policy <br>
+                    Terms and Condition <br>
+                    Pricing and Refund <br>
+                    Hire from us
+                </p>
+            </div>
+            <div id="col3" class="col">
+                <h1>Community</h1>
+                <p>
+                    Inertia <br>
+                    Discord
+                </p>
+            </div>
+            <div id="col4" class="col">
+                <h1>GetinTouch</h1>
+                <p>
+                    +91 8688909775 <br>
+                    uyalavadav@gmail.com <br>
+                </p>
+            </div>
+        </div>
+        <div id="copyright">
+            Copyright 2024 sheryians pvt.Ltd <br>All Rights Reserverd <br> <br> <br>
+        </div>
+    </div>
+</body>
+
+</html>

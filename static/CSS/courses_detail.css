@@ -1,0 +1,58 @@
+
+@font-face {
+    font-family: verdana;
+    src: url(../fonts/verdana.ttf);
+}
+@font-face {
+    font-family: 'NeueMachina';
+    src: url(../fonts/NeueMachina-Light.otf);
+}
+
+#course_detail{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#course_detail #left{
+    width: 45%;
+    margin-left: 5%;
+}
+#course_detail #right{
+    width: 50%;
+}
+#course_detail #left #mainheading{
+    font-size: 70px;
+    font-family: 'NeueMachina';
+    margin-bottom: 50px;
+}
+#course_detail #left #price{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'NeueMachina';
+
+}
+#course_detail #left #price #discount{
+    color: #24cfa6;
+    font-family: 'NeueMachina';
+
+}
+#course_detail #left #button{
+    font-family: 'NeueMachina';
+
+    background-color: #24cfa6;
+    color: black;
+    width: fit-content;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 25px;
+    margin-top: 50px;
+    text-decoration: none;
+    display: block;
+}
+#course_detail #right img{
+    border-radius: 100px;
+    box-shadow: 0.5px 0.5px 10px white;
+    width: 80%;
+}

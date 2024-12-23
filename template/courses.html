@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Courses
+        {% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'CSS/courses.css' %}">
+
+<div id="view1">
+    <p id="mainheading">We're not a</p>
+    <p id="green"> course factory . </p>
+    <p id="subheading">We focus on courses that really help. </p>
+</div>
+<div id="view2">
+    <p>Courses which do work</p>
+    <div id="courses">
+        <div class="course">
+            <a href="{% url 'myapp:courses_detail' 'webdevelopment' %}" id="image_link">
+                <img src="{% static 'images/webdevelopment.png'%}" alt="">
+                <p>Web Development</p>
+            </a>
+            <a href="{% url 'myapp:courses_detail' 'webdevelopment' %}" id="link">View Details</a>
+        </div>
+        <div class="course">
+            <a href="{% url 'myapp:courses_detail' 'java' %}" id="image_link">
+                <img src="{% static 'images/java.png'%}" alt="">
+                <p>Java Programming</p>
+            </a>
+            <a href="{% url 'myapp:courses_detail' 'java' %}" id="link">View Details</a>
+        </div>
+        <div class="course">
+            <a href="{% url 'myapp:courses_detail' 'python' %}" id="image_link">
+                <img src="{% static 'images/python.png'%}" alt="">
+                <p>Python Programming</p>
+            </a>
+            <a href="{% url 'myapp:courses_detail' 'python' %}" id="link">View Details</a>
+        </div>
+        <div class="course">
+            <a href="{% url 'myapp:courses_detail' 'django' %}" id="image_link">
+                <img src="{% static 'images/django.png'%}" alt="">
+                <p>Django Framework</p>
+            </a>
+            <a href="{% url 'myapp:courses_detail' 'django' %}" id="link">View Details</a>
+        </div>
+        <div class="course">
+            <a href="{% url 'myapp:courses_detail' 'devops' %}" id="image_link">
+                <img src="{% static 'images/devops.png'%}" alt="">
+                <p>DevOps</p>
+            </a>
+            <a href="{% url 'myapp:courses_detail' 'devops' %}" id="link">View Details</a>
+        </div>
+        <div class="course">
+            <a href="{% url 'myapp:courses_detail' 'uiux' %}" id="image_link">
+                <img src="{% static 'images/uiux.png'%}" alt="">
+                <p>Ui/Ux Design</p>
+            </a>
+            <a href="{% url 'myapp:courses_detail' 'uiux' %}" id="link">View Details</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

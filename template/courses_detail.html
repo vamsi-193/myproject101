@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+{{name}}
+{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'CSS/courses_detail.css' %}">
+
+<div id="course_detail">
+    <div id="left">
+        <div id="mainheading">
+            {{name}}
+        </div>
+        <div id="price">
+            Only  {{59000}}* <span id="discount">(75% Off)</span>
+        </div>
+        <a href="{% url 'myapp:homepage' %}" id="button">HomePage</a>
+    </div>
+    <div id="right">
+        <img src="{% static image %}" alt="">
+    </div>
+</div>
+
+{% endblock content %}
